@@ -4,6 +4,7 @@
   --color-3: #7d9f7d;
   --color-4: #c5dbc5;
   --color-5: #ebfaeb;
+  --color-6: #543721;
 }
 * {
   margin: 0;
@@ -59,6 +60,7 @@ body {
   row-gap: 3rem;
   display: flex;
   justify-content: center;
+  border-top: 0.3rem solid #543721;
 }
 
 /* .img {
@@ -117,6 +119,7 @@ body {
   background-color: #ffffff;
   border-radius: 0.5rem;
   min-width: 60rem;
+  border: 0.5rem solid #114511;
 }
 
 .container--2 {
@@ -138,7 +141,7 @@ body {
 
 .modal-head {
   font-size: 3.7rem;
-  color: #281a17;
+  color: #543721;
   font-weight: 700;
   line-height: 1;
 }
@@ -146,7 +149,7 @@ body {
   font-style: italic;
   font-size: 1.1rem;
   text-transform: uppercase;
-  color: #827b76;
+  color: #b8b8b8;
 }
 
 .btn--close {
