@@ -1,0 +1,181 @@
+:root {
+  --color-1: #114511;
+  --color-2: #356335;
+  --color-3: #7d9f7d;
+  --color-4: #c5dbc5;
+  --color-5: #ebfaeb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #ffffff;
+}
+
+img {
+  height: 100%;
+}
+
+/* Seção nav com a logo*/
+.nav {
+  display: flex;
+  height: 12rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 10rem;
+  margin-bottom: 1rem;
+  /* background-color: ; */
+}
+
+.logo {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+/*Seção com Fotos e Botão para modal*/
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 10rem;
+  background-color: #c5dbc5;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  height: 100rem;
+}
+
+/*footer*/
+
+.centra {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #c5dbc5;
+}
+
+.btn {
+  padding: 2.5rem 15rem 4rem 15rem;
+  background-color: #356335;
+  color: #ebfaeb;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 500;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  /* transform: translateY(10%); */
+}
+
+.btn:hover {
+  background-color: #114511;
+  color: #ebfaeb;
+}
+
+/*Modal e Overlay*/
+
+.info {
+  padding: 3rem 4rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.5s;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  min-width: 60rem;
+}
+
+.container--2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.titulo {
+  margin-left: 5rem;
+}
+
+.logo-reduzida {
+  height: 9rem;
+  width: 100%;
+}
+
+.modal-head {
+  font-size: 3.7rem;
+  color: #281a17;
+  font-weight: 700;
+  line-height: 1;
+}
+.modal-sub {
+  font-style: italic;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #827b76;
+}
+
+.btn--close {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  font-size: 4rem;
+  border: none;
+  background: none;
+  color: #2e211c;
+  cursor: pointer;
+}
+
+.contato {
+  font-size: 1.3rem;
+}
+
+.info p {
+  font-size: 1.3rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 420) {
+}
